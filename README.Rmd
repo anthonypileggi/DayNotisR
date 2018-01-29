@@ -1,0 +1,33 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "README-"
+)
+```
+
+# DayNotisR
+
+A programmable MacOSX desktop notifications based time management system, built in R.
+
+*Inspired by [DayNotis](https://github.com/djmetzle/DayNotis).*
+
+## Installation
+
+```{r, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("anthonypileggi/DayNotisR")
+```
+
+## Usage
+
+After installation, run from the command line:
+```
+. $path_to_DayNotisR/DayNotis.sh
+```

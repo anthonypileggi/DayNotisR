@@ -1,0 +1,150 @@
+# DayNotis Configuration
+
+# Global Settings
+
+global_option: true
+
+MONDAY:
+        0830:
+                title: Shower Time
+                body: Are you ready for work yet?
+                level: critical
+        0900:
+                title: Time to leave for work
+                level: urgent
+        0920:
+                title: Your Gonna Be Late!
+                level: critical
+        0950:
+                title: Dev Meeting Coming Up
+                level: urgent
+        1200:
+                title: Lunch Time
+                level: urgent
+        1500:
+                title: Core Hours Over
+                body: Coffee time?
+                level: notice
+        2200:
+                title: Betime Approaching
+                level: urgent
+        2230:
+                title: Bedtime
+                body: Your wife will be mad if you're up this late!
+                level: critical
+
+TUESDAY:
+        0830:
+                title: Shower Time
+                body: Are you ready for work yet?
+                level: critical
+        0900:
+                title: Time to leave for work
+                level: urgent
+        0920:
+                title: Your Gonna Be Late!
+                level: critical
+        1200:
+                title: Lunch Time
+                level: urgent
+        1500:
+                title: Core Hours Over
+                body: Coffee time?
+                level: notice
+        2200:
+                title: Betime Approaching
+                level: urgent
+        2230:
+                title: Bedtime
+                body: Your wife will be mad if you're up this late!
+                level: critical
+
+WEDNESDAY:
+        0830:
+                title: Shower Time
+                body: Are you ready for work yet?
+                level: critical
+        0900:
+                title: Time to leave for work
+                level: urgent
+        0920:
+                title: Your Gonna Be Late!
+                level: critical
+        1200:
+                title: Lunch Time
+                level: urgent
+        1500:
+                title: Core Hours Over
+                body: Coffee time?
+                level: notice
+        2200:
+                title: Betime Approaching
+                level: urgent
+        2230:
+                title: Bedtime
+                body: Your wife will be mad if you're up this late!
+                level: critical
+
+THURDAY:
+        0830:
+                title: Shower Time
+                body: Are you ready for work yet?
+                level: critical
+        0900:
+                title: Time to leave for work
+                level: urgent
+        0920:
+                title: Your Gonna Be Late!
+                level: critical
+        1200:
+                title: Lunch Time
+                level: urgent
+        1500:
+                title: Core Hours Over
+                body: Coffee time?
+                level: notice
+        2200:
+                title: Betime Approaching
+                level: urgent
+        2230:
+                title: Bedtime
+                body: Your wife will be mad if you're up this late!
+                level: critical
+
+FRIDAY:
+        0830:
+                title: Shower Time
+                body: Are you ready for work yet?
+                level: critical
+        0900:
+                title: Time to leave for work
+                level: urgent
+        0920:
+                title: Your Gonna Be Late!
+                level: critical
+        1200:
+                title: Lunch Time
+                level: urgent
+        1500:
+                title: Core Hours Over
+                body: Coffee time?
+                level: notice
+
+SATURDAY:
+        2230:
+                title: Bedtime Soon
+                body: Why not get rested?
+                level: urgent
+        2300:
+                title: BEDTIME
+                body: Your wife will be mad if you're up this late!
+                level: critical
+
+SUNDAY:
+        2200:
+                title: Betime Approaching
+                level: urgent
+        2230:
+                title: BEDTIME
+                body: You have work tomorrow!
+                level: critical
