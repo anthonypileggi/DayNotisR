@@ -4,10 +4,7 @@
 \alias{setup}
 \title{Setup DayNotisR on a MacOSX machine}
 \usage{
-setup(file = "DayNotis_crontab")
-}
-\arguments{
-\item{file}{name of DayNotis crontab}
+setup()
 }
 \description{
 Setup DayNotisR on a MacOSX machine

@@ -1,26 +1,25 @@
 
 #' Setup DayNotisR on a MacOSX machine
-#' @param file name of DayNotis crontab
 #' @export
-setup <- function(file = "DayNotis_crontab") {
+setup <- function() {
 
-  # get schedule from .yml file
-  schedule <- yaml::read_yaml("schedule.yml")
+  # save the current crontab
+  message("Saving current crontab...")
+  system("crontab -l > crontab")
 
-  # create crontab
-  crontab <-
-    unlist(
-      purrr::map(
-        toupper(c("saturday", "sunday", "monday", "tuesday", "wednesday", "thursday")),
-        function(day) {
-          purrr::map_chr(
-            names(schedule[[day]]),
-            function(time) {
-              write_notification_cron(time, schedule[[day]][[time]])
-            })
-        })
-      )
+  # remove all DayNotis rows from it
+  cleanse_crontab()
 
-  # write crontab to 'DayNotis_crontab'
-  readr::write_lines(crontab, path = file)
+  # convert yaml schedule to a crontab
+  yaml_as_crontab()
+
+  # Combine with existing crontab, ignoring
+  merge_crontabs()
+
+  # setup new crontab
+  message("Saving new crontab...")
+  system("crontab new_crontab")
+
+  # remove extra files
+  unlink(c("crontab", "crontab_DayNotis", "new_crontab"))
 }

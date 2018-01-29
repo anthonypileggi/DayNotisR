@@ -18,6 +18,17 @@ devtools::install_github("anthonypileggi/DayNotisR")
 Usage
 -----
 
-After installation, run from the command line:
+Create your weekly schedule in `config.yml`.
 
-    . $path_to_DayNotisR/DayNotis.sh
+Then activiate your notifications with:
+
+``` r
+DayNotisR::setup()
+```
+
+If you make any changes to `config.yml`, just re-run it.
+
+How to turn it off
+------------------
+
+Just make a blank `config.yml`.
